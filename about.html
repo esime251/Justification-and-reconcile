@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Justice & Reconciliation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            box-sizing: border-box;
+            background: #f9f9f9;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            color: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+            background: url('reconciliation-image.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 20px auto 0;
+            color: white; /* Ensures paragraph is visible */
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .about-card {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .about-image {
+            width: 100%;
+        }
+
+        .about-content {
+            padding: 20px;
+        }
+
+        h2 {
+            margin: 0 0 20px;
+            color: #222;
+        }
+
+        p {
+            margin: 0 0 20px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .about-card {
+                flex-direction: row;
+            }
+
+            .about-image {
+                width: 40%;
+            }
+
+            .about-content {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">J & R</div>
+    <nav>
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="about.html"><i class="fa fa-info-circle"></i> About Us</a>
+        <a href="blog.html"><i class="fa fa-newspaper"></i> Blog</a>
+    </nav>
+</header>
+
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>About Us</h1>
+        <p>We are dedicated to promoting justice and fostering reconciliation in communities. Our mission is to create fair systems that hold individuals accountable while supporting the healing and restoration of relationships through thoughtful initiatives and partnerships.</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="about-section">
+        <div class="about-card">
+            <img src="justice-image.jpg" alt="Justice Image" class="about-image">
+            <div class="about-content">
+                <h2>Why is Justice Important?</h2>
+                <p>Justice involves holding individuals accountable for their actions and ensuring fair consequences. For instance, someone who steals may face penalties like jail time or fines. Justice ensures fairness and maintains societal order.</p>
+            </div>
+        </div>
+
+        <div class="about-card">
+            <img src="reconciliation-image.jpg" alt="Reconciliation Image" class="about-image">
+            <div class="about-content">
+                <h2>What is Reconciliation?</h2>
+                <p>Reconciliation is the process of bringing individuals together after an argument or disagreement. It helps mend relationships, rebuild trust, and address issues. For example, two friends resolving a disagreement by discussing and apologizing can lead to better communication and peace.</p>
+            </div>
+        </div>
+
+        <div class="about-card">
+            <img src="relationship-image.jpg" alt="Justice and Reconciliation" class="about-image">
+            <div class="about-content">
+                <h2>How Justice and Reconciliation Interconnect</h2>
+                <p>Justice and reconciliation work hand in hand to foster a fair and peaceful society. Justice ensures that wrongdoers are held accountable, while reconciliation promotes healing and restoring relationships, making communities stronger and more harmonious.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="contact-section">
+  <div class="contact-container">
+      <div class="contact-form">
+          <h2>Contact Us</h2>
+          <p>Have questions? Reach out to us and we'll get back to you shortly.</p>
+          <form id="contactForm" onsubmit="sendEmail(); return false;">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+              <label for="phone">Contact Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your Contact Number" required>
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+              <button type="submit">Send Message</button>
+          </form>
+      </div>
+
+      <div class="contact-image">
+          <img src="contact-image.jpg" alt="Contact Us">
+      </div>
+  </div>
+</section>
+
+<script>
+  function sendEmail() {
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const message = document.getElementById('message').value;
+
+      const mailtoLink = `mailto:ansahesime@gmail.com?subject=Contact%20Us%20Form%20Submission&body=Name:%20${encodeURIComponent(name)}%0AContact%20Number:%20${encodeURIComponent(phone)}%0AMessage:%20${encodeURIComponent(message)}`;
+
+      window.location.href = mailtoLink;
+  }
+</script>
+
+<style>
+  .contact-section {
+      background: #f4f4f9;
+      padding: 80px 20px;
+  }
+
+  .contact-container {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+      gap: 40px;
+      align-items: center;
+  }
+
+  .contact-form {
+      flex: 1;
+  }
+
+  .contact-form h2 {
+      font-size: 2.5rem;
+      color: #222;
+      margin-bottom: 20px;
+  }
+
+  .contact-form p {
+      margin-bottom: 30px;
+      color: #555;
+  }
+
+  .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      box-sizing: border-box;
+  }
+
+  .contact-form textarea {
+      height: 150px;
+      resize: none;
+  }
+
+  .contact-form button {
+      background: #f3e006;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+  }
+
+  .contact-form button:hover {
+      background: #45a049;
+  }
+
+  .contact-image {
+      flex: 1;
+  }
+
+  .contact-image img {
+      width: 100%;
+      border-radius: 12px;
+  }
+
+  @media (max-width: 768px) {
+      .contact-container {
+          flex-direction: column;
+          gap: 20px;
+      }
+  }
+</style>
+
+
+<footer>
+    &copy; 2025 Justice & Reconciliation. All rights reserved.
+</footer>
+
+</body>
+</html>

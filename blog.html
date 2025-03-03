@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Justice & Reconciliation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            box-sizing: border-box;
+            background: #f9f9f9;
+        }
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .blog-card {
+            display: flex;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .blog-image {
+            width: 50%;
+            object-fit: cover;
+        }
+        .blog-content {
+            width: 50%;
+            padding: 40px;
+            background: #FFD84D;
+        }
+        .blog-content h2 {
+            font-size: 2rem;
+            margin: 0 0 20px;
+        }
+        .blog-content p {
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .blog-content a {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        header, footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .blog-card {
+                flex-direction: column;
+            }
+            .blog-image, .blog-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">J & R</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="blog-card">
+        <img src="600x400.jpg" alt="Blog 1" class="blog-image">
+        <div class="blog-content">
+            <h2>Understanding Justice & Reconciliation</h2>
+            <p>Explore how justice and reconciliation work hand in hand to create a fair and peaceful society.</p>
+            <a href="https://example.com/blog1">Read More →</a>
+        </div>
+    </div>
+
+    <div class="blog-card">
+        <img src="600x600.jpg" alt="Blog 2" class="blog-image">
+        <div class="blog-content">
+            <h2>The Importance of Justice in Society</h2>
+            <p>Learn why justice is crucial for maintaining fairness and ensuring accountability in every community.</p>
+            <a href="https://example.com/blog2">Read More →</a>
+        </div>
+    </div>
+
+    <div class="blog-card">
+        <img src="800x900.jpg" alt="Blog 3" class="blog-image">
+        <div class="blog-content">
+            <h2>How Reconciliation Heals Communities</h2>
+            <p>Discover how reconciliation helps repair broken relationships and fosters understanding.</p>
+            <a href="https://example.com/blog3">Read More →</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2025 Justice & Reconciliation. All rights reserved.
+</footer>
+
+</body>
+</html>
